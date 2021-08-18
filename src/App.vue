@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <swiper>
+      <swiperitem><img src="./assets/1.jpeg" alt=""></swiperitem>
+      <swiperitem><img src="./assets/2.jpeg" alt=""></swiperitem>
+      <swiperitem><img src="./assets/3.jpeg" alt=""></swiperitem>
+      <swiperitem><img src="./assets/4.jpeg" alt=""></swiperitem>
+    </swiper>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import swiper from "./components/common/swiper";
+import swiperitem from "./components/common/swiperitem";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    swiper,swiperitem
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  padding: 0;
+  margin: 0;
 }
 </style>
