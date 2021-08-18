@@ -39,8 +39,10 @@ export default {
     }
   },
   mounted() {
-    this.handledom()
-    this.starttimer()
+    window.setTimeout(()=>{
+      this.handledom()
+      this.starttimer()},500)
+
   },
   methods:{
     isactive(index){
@@ -136,7 +138,6 @@ export default {
 <style scoped>
 .swiper{
   width: 100%;
-  height: 300px;
   overflow: hidden;
   position: relative;
 }
